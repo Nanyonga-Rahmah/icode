@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icode</title>
+</head>
+<style>
+    body{
+        margin:0;
+    }
+    .container{
+        margin:10px;
+        max-height: 900vh;
+        max-width: 100%;
+        box-shadow: 2px 2px 5px wheat ;
+        background-color: blanchedalmond;
+       overflow:hidden;
+       white-space:normal;
+       border-radius: 10px;
+       box-sizing: border-box;
+        
+    }
+    .one{
+        
+        background-color: aquamarine;
+        width: 400px;
+        height: 350px;
+        display: inline-block;
+        margin:20px;
+        box-sizing: border-box;
+        
+       
+        
+    }
+    img{
+        margin:10%;
+        width: 80%;
+        height: 200px;
+        box-sizing: border-box;
+        opacity: 0.8;
+    }
+    .description{
+margin-top: 0;
+margin-left: 10%;
+
+;
+    }
+    .time{
+        line-height:1;
+       float: right;
+       margin-right:10%;
+       margin-top: 0;
+    }
+    .description,.time{
+        display: inline-block;
+    }
+    .one:hover img{
+        opacity: 1;
+        z-index: 1;
+        padding:20px;
+        box-shadow: 2px 2px 5px hotpink;
+    }
+    .middle{
+       position: relative;
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+    }
+    @media screen  and (max-width:480px){
+        .middle{
+            flex-direction: column;
+        }
+        .container{
+            margin: 20px auto;
+        }
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="one"><img src="https://media.istockphoto.com/id/1220394455/photo/sunset-in-kampala.jpg?b=1&s=170667a&w=0&k=20&c=W6V2AqQDLmVA6qLBEW5mURKwyZMWSFM6BbD7ClikPvM=">
+            <p class="description">sunset-in-kampala</p>
+            <p class="time">Morning</p>
+        </div>
+       
+        <div class="one"><img src="https://media.gettyimages.com/id/1179004072/photo/view-of-downtown-kampala-city-at-night-uganda-africa.jpg?s=612x612&w=0&k=20&c=xg8sjhUmGFbVhbDtKI5sfnPDYxJdEGrJIsGzOlqGVhE=" alt="">
+            <p class="description">View of Kampala</p>
+            <p class="time">Night</p>
+        </div>
+        
+        <div class="one"><img src="https://media.gettyimages.com/id/157853756/photo/skyline-of-la-defense-at-night.jpg?s=612x612&w=gi&k=20&c=QZpVx5DO_D99wZ6RlPSZuuBu3lfQaiZUVYj2_lHJEJo=">
+        <p class="description">view-of-downtown-kampala</p>
+        <p class="time">Night</p>
+        </div>
+        <div class="middle">
+        
+        <div class="one"><img src="https://media.gettyimages.com/id/170093299/photo/changchun-china.jpg?s=612x612&w=gi&k=20&c=po561SaZukhIxq81F0ZSgYhJC3iOeTl1VVPDbYYD8r4=" alt="">
+        <p class="description">Kampala</p>
+        <p class="time">Night</p>
+        </div>
+        <div class="one"><img src="https://media.gettyimages.com/id/1172962227/photo/view-of-downtown-kampala-city-uganda-africa.jpg?s=612x612&w=gi&k=20&c=ZwLbcUUbaq5xZG7KD1mlwmD3-hIBuW-gfIiFPoi3xtM=" alt="">
+        <p class="description">Aerial-view of Kampala</p>
+        <p class="time">Afternoon</p>
+        </div>
+        </div>
+       
+
+    </div>
+</body>
+</html>
